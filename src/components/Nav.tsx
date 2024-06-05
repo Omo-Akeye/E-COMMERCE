@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <div className="w-[90%] m-auto flex justify-between font-medium mt-8">
+    <div className="w-[90%] m-auto flex justify-between font-medium my-4">
         <ul className="flex gap-3">
             <li>
                 <Link to='/'>HOME</Link>
