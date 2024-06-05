@@ -10,7 +10,7 @@ export default function Scroll() {
              <li className="text-2xl font-medium">30% ON ALL FRAGRANCES</li>
              <li>.</li>
              <li className="text-2xl font-medium">FORMAL WEARS</li>
-
+<li></li>
         </ul>
     </div>
   )
