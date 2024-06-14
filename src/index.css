@@ -37,3 +37,22 @@
 .gallery::-webkit-scrollbar{
   display: none;
 }
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.hex-alt {
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: linear-gradient(45deg,#A7DBD8,#C7F464);
+}
+
+img {
+  object-fit:cover;
+}
