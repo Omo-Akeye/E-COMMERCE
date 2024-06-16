@@ -1,5 +1,4 @@
 
-
 export default function NewsLetter() {
   return (
     <div className="p-6 bg-light-gray">
