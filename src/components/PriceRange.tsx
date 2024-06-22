@@ -30,7 +30,7 @@ export default function PriceRange() {
   
     return (
       <div className="py-3 text-sm font-semibold border-b-2">
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-1">
           <h2 className="text-semibold">Price Range</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsOpen(!IsOpen)}></i>
         </div>

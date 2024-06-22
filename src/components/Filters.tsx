@@ -26,7 +26,7 @@ export default function Filters() {
        </section>
        
        <section className="py-3 text-sm font-medium border-b-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-1">
           <h2 className="font-semibold">Availability</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsAvailOpen(!IsAvailOpen)}></i>
         </div>
@@ -37,7 +37,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>In Stock (450)</p>
           </span>
-          <span className="flex gap-2">
+          <span className="flex gap-2 mt-1">
           <input type="checkbox" name="" id="" />
           <p>Out of Stock (18)</p>
           </span>
@@ -48,7 +48,7 @@ export default function Filters() {
        </section>
 
        <section className="py-3 text-sm font-medium border-b-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-1">
           <h2 className="font-semibold">Category</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsCategoryOpen(!IsCategoryOpen)}></i>
         </div>
@@ -59,7 +59,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Men</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Women</p>
           </li>
@@ -67,7 +67,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Kids</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Watches</p>
           </li>
@@ -75,7 +75,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Shoes</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Luxury Attire</p>
           </li>
@@ -90,7 +90,7 @@ export default function Filters() {
        </section>
 
        <section className="py-3 text-sm font-medium border-b-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-1">
           <h2 className="font-semibold">Colors</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsColorsOpen(!IsColorsOpen)}></i>
         </div>
@@ -122,7 +122,7 @@ export default function Filters() {
        </section>
 
        <section className="py-3 text-sm font-medium border-b-2">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-1">
           <h2 className="font-semibold">Collections</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsCollectionOpen(!IsCollectionOpen)}></i>
         </div>
@@ -133,7 +133,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Featured</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>New Arrivals</p>
           </li>
@@ -141,7 +141,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Deal of the day</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Best Seller</p>
           </li>
@@ -151,8 +151,8 @@ export default function Filters() {
        }
        </section>
 
-       <section className="py-3 text-sm font-medium border-b-2">
-        <div className="flex justify-between">
+       <section className="py-3 text-sm font-medium border-b-2"> 
+        <div className="flex justify-between mb-1">
           <h2 className="font-semibold">Tags</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsTagOpen(!IsTagOpen)}></i>
         </div>
@@ -163,7 +163,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Trends</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Bags</p>
           </li>
@@ -171,7 +171,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Shorts</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Shirts</p>
           </li>
@@ -179,7 +179,7 @@ export default function Filters() {
           <input type="checkbox" name="" id="" />
           <p>Trousers</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 my-1">
           <input type="checkbox" name="" id="" />
           <p>Flats</p>
           </li>
@@ -196,8 +196,8 @@ export default function Filters() {
 
 
        <section className="py-3 text-sm font-medium">
-        <div className="flex justify-between">
-          <h2 className="mb-1 font-semibold">Ratings</h2>
+        <div className="flex justify-between mb-1">
+          <h2 className="font-semibold">Ratings</h2>
           <i className="cursor-pointer fa-solid fa-chevron-down" onClick={()=> setIsRatingOpen(!IsRatingOpen)}></i>
         </div>
        {
