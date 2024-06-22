@@ -2,7 +2,7 @@ import products from '../data/data.js'
 
 export default function Product() {
   return (
-    <div className="w-[75%]">
+    <div className="w-[80%]">
       <div className="flex items-center justify-end gap-2">
       <p>Sort by:</p> <h3 className="font-semibold">Featured</h3><i className="fa-solid fa-angle-down"></i>
       </div>

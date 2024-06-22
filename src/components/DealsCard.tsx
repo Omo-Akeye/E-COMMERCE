@@ -28,7 +28,7 @@ const deals = [
 export default function DealsCard() {
   return (
     <div>
-        <div className='flex w-[60%] m-auto gap-11'>
+        <div className='flex items-center justify-center gap-6'>
 
             {
                 deals.map(deal => (
@@ -36,15 +36,15 @@ export default function DealsCard() {
                     
                     
                     <div className='w-[98%] h-[200px] flex items-center justify-center'>
-                    <img src={deal.src} alt="watch" className='w-full h-full object-contain' />
+                    <img src={deal.src} alt="watch" className='object-contain w-full h-full' />
                     </div>
                     
                     
-                    <span className='flex justify-between text-xs mt-2'>
+                    <span className='flex justify-between mt-2 text-xs'>
                     <div>
                     <h3 className='font-bold capitalize'>{deal.description}</h3>
                     <div className='flex'>
-                    <p className='font-semibold mr-2'>{deal.price}</p>
+                    <p className='mr-2 font-semibold'>{deal.price}</p>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
