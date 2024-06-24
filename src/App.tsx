@@ -5,6 +5,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Cart from "./pages/Cart";
 import WishList from "./pages/WishList";
 import Homepage from "./pages/Homepage";
+import ProductDetails from "./pages/ProductDetails";
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
           path: "/product",
           element: <Productpage/>,
         },
+        {
+          path:'/product/:name',
+          element:<ProductDetails/>
+       },
         {
           path: "/cart",
           element: <Cart/>,

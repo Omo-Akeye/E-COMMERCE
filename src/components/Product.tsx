@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom'
 import products from '../data/data.js'
 
 export default function Product() {
@@ -10,7 +12,8 @@ export default function Product() {
         {
             products.map(product => (
               
-                <div className="overflow-hidden bg-white shadow-md max-w-56">
+              <Link to={`/product/${product.name}`} >
+                <div className="overflow-hidden bg-white shadow-md max-w-56" key={product.id}>
                <div className='relative'>
                <img 
                   className="relative object-cover object-center w-full h-60" 
@@ -33,6 +36,8 @@ export default function Product() {
                   
                 </div>
               </div>
+
+              </Link>
             ))
         }
       </section>
