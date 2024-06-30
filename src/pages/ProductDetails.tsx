@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import products from "../data/data";
 import AlsoLike from "../components/AlsoLike";
 import Options from "../components/Options";
 
 
 export default function ProductDetails() {
-
+    const navigate = useNavigate()
     const { name } = useParams();
     const product = products.find(p => p.name === (name));
   
@@ -14,8 +14,8 @@ export default function ProductDetails() {
     }
   
   return (
-    <div className="w-[90%] m-auto">
-       
+    <div className="w-[90%] m-auto relative">
+       <i className="fa-solid fa-arrow-left-long absolute top-[2%] left-[0] hover:bg-gray-400 p-1 rounded-full cursor-pointer" onClick={()=> navigate(-1)}></i>
         <section className="text-center">
         <span className="flex items-center justify-center gap-5 text-sm font-medium">
         <h3>Home</h3> <i className="fa-solid fa-angle-right"></i> <h3>Category</h3> <i className="fa-solid fa-angle-right"></i> <h3 className="capitalize">{product.category}</h3>

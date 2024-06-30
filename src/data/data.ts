@@ -52,8 +52,8 @@ const products = [
     name: "Classic Fedora Hat",
     description: "Felt",
     category: 'men',
-    src: product2,
-    src1: product2_1,
+    src: product2_1,
+    src1: product2,
     src2: product2_2,
     price: 150,
     Full_Description: 'This classic fedora hat is made from high-quality felt material, providing both style and durability. Its timeless design features a wide brim and a sleek band, making it the perfect accessory for any outfit, whether casual or formal.'
