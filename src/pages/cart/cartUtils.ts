@@ -14,6 +14,7 @@ export function handleAddCart (e: React.MouseEvent,product: Product, dispatch:Ap
       totalPrice: product.price * 1,
     };
     dispatch(addItem(newItem));
+    
   };
 
   export function handleIncreaseItem (dispatch: AppDispatch, cartItemId: number)  {

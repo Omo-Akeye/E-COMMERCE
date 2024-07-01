@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <div className="w-[90%] m-auto flex justify-between font-medium my-4">
+    <div className="w-[90%] m-auto flex justify-between font-medium my-4 text-sm">
         <ul className="flex gap-3">
             <li>
                 <Link to='/'>HOME</Link>
@@ -26,8 +26,8 @@ export default function Nav() {
            </li>
 
            <li>
-           <Link to='/wishlist' className="bg-black rounded-full px-2 py-1">
-           <i className="fa-regular fa-heart text-white text-sm"></i>
+           <Link to='/wishlist' className="px-[6px] py-1 bg-black rounded-full">
+           <i className="text-sm text-white fa-regular fa-heart"></i>
            </Link>
            </li>
 
@@ -35,8 +35,8 @@ export default function Nav() {
            <Link to='/cart'>CART<i className="fa-solid fa-cart-shopping"></i></Link>
            </li>
            <li>
-           <Link to='/' className="bg-black rounded-full px-[9px] py-1">
-           <i className="fa-regular fa-user text-white text-sm"></i>
+           <Link to='/' className="bg-black rounded-full px-[7px] py-1">
+           <i className="text-sm text-white fa-regular fa-user"></i>
            </Link>
            </li>
        </ul>

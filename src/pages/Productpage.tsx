@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Filters from "../components/Filters";
 import Options from "../components/Options";
 import Product from "../components/Product";
@@ -5,10 +6,15 @@ import Product from "../components/Product";
 
 export default function Productpage() {
   return (
+    <>
     <div className="w-[90%] m-auto">
       <div className="text-center">
         <span className="flex items-center justify-center gap-5 text-sm font-semibold">
-        <h3>Home</h3> <i className="fa-solid fa-angle-right"></i> <h3>Products</h3>
+       <Link to={'/'}>
+       <h3>Home</h3>
+       </Link>  
+       <i className="fa-solid fa-angle-right"></i> 
+       <h3>Products</h3>
         </span>
         <h1 className="my-4 text-4xl font-semibold">PRODUCTS</h1>
       </div>
@@ -17,12 +23,16 @@ export default function Productpage() {
       <Filters/>
       <Product/>
       </section>
-      <div className="border-t-2 border-black">
+      
+    </div>
+
+    <div className="border-t-2 border-black">
         
       <Options/>
       
       </div>
-    </div>
+    </>
+    
   )
 }
 
