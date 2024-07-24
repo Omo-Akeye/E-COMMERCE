@@ -1,13 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
+import { CartItem } from "../components/types";
+// import { CartItem } from "../pages/Cart";
 
-interface CartItem {
-  id: number;
-  name: string;
-  quantity: number;
-  price: number;
-  totalPrice: number;
-}
+
 
 interface CartState {
   cart: CartItem[];

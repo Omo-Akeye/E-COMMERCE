@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Filters from "../components/Filters";
-import Options from "../components/Options";
+import Options from "./ui/Options";
 import Product from "../components/Product";
 
 

@@ -1,6 +1,6 @@
-import HeroImg from '../assets/medium-shot-black-women-posing-together.webp'
-import watch from '../assets/smartwatch-screen-digital-device.jpg'
-import Button from './Button'
+import HeroImg from '/src/assets/medium-shot-black-women-posing-together.webp'
+import watch from '/src/assets/smartwatch-screen-digital-device.jpg'
+import Button from '../../components/Button'
 export default function Hero() {
   return (
     <div className='py-4 bg-light-gray'>

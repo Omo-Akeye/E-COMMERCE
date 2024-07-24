@@ -1,4 +1,5 @@
-import img from '../assets/beautiful-fashion-woman-posing-with-elegant-suit_1328-3308.jpg'
+import img from '/src/assets/beautiful-fashion-woman-posing-with-elegant-suit_1328-3308.jpg'
+
 
 export default function Think() {
   return (

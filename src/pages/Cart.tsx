@@ -1,20 +1,16 @@
 import { useDispatch, useSelector } from 'react-redux'; 
-import { RootState } from '@reduxjs/toolkit/query';
+
 import { handleDecreaseItem, handleDeleteItem, handleIncreaseItem } from './cart/cartUtils';
 import Summary from './cart/Summary';
-import Options from '../components/Options';
+import Options from './ui/Options';
+import { RootState } from '../store';
+import { CartItem } from '../components/types';
 
-interface cartItem {
-  id: number;
-  name: string;
-  src: string;
-  description: string;
-  price: number;
-  quantity: number
-}
+
 
 export default function Cart() {
   const dispatch = useDispatch()
+  
   const cart = useSelector((state: RootState) => state.cart.cart);
   return ( 
     <>
@@ -32,7 +28,7 @@ export default function Cart() {
           </div>
            { cart.length > 0 ? ( 
             <>
-          { cart.map((cartItem: cartItem) => <main className='flex text-sm mb-4 gap-4' key={cartItem.id}>
+          { cart.map((cartItem: CartItem) => <main className='flex text-sm mb-4 gap-4' key={cartItem.id}>
             <img src={cartItem.src} alt="" className='w-[150px] h-[150px] object-cover'/>
             <div className='flex w-[60%] justify-between'>
             

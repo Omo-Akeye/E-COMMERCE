@@ -1,4 +1,4 @@
-import DealsCard from "./DealsCard";
+import DealsCard from "../../components/DealsCard";
 
 
 export default function Deals() {

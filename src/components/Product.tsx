@@ -27,7 +27,7 @@ function Product () {
       <section className='grid grid-cols-3 gap-6'>
         {products.map((product: Product) => (
           <Link to={`/product/${product.name}`} key={product.id}>
-            <div className="object-cover overflow-hidden bg-white shadow-md max-w-56">
+            <div className="object-cover overflow-hidden bg-white shadow-md max-w-[350px]">
               <div className='relative overflow-hidden'>
                 <img 
                   className="object-cover w-full h-64" 
@@ -44,7 +44,7 @@ function Product () {
                   <i className="mr-1 fa-solid fa-circle-plus"></i> Add 
                 </button>
               </div>
-              <div className="">
+              <div className="my-4">
                 <p className="mt-2 text-xs text-gray-600">{product.description}</p>
                 <div className="flex items-center justify-between text-sm font-semibold">
                   <h1>{product.name}</h1>

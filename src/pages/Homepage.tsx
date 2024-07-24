@@ -1,20 +1,20 @@
 
-import Blogs from "../components/Blogs";
+import Blogs from "./ui/Blogs";
 import Collections from "../components/Collections";
-import Deals from "../components/Deals";
+import Deals from "./ui/Deals";
 import Favourite from "../components/Favourite";
 
-import Hero from "../components/Hero";
+import Hero from "./ui/Hero";
 import Luxury from "../components/Luxury";
-import NewsLetter from "../components/NewsLetter";
+import NewsLetter from "./ui/NewsLetter";
 
-import Options from "../components/Options";
-import QueenAttire from "../components/QueenAttire";
-import Review from "../components/Review";
-import Scroll from "../components/Scroll";
-import ShopByCategory from "../components/ShopByCategory";
-import Stats from "../components/Stats";
-import Think from "../components/Think";
+import Options from "./ui/Options";
+import QueenAttire from "./ui/QueenAttire";
+import Review from "./ui/Review";
+import Scroll from "./ui/Scroll";
+import ShopByCategory from "./ui/ShopByCategory";
+import Stats from "./ui/Stats";
+import Think from "./ui/Think";
 
 
 export default function Homepage() {

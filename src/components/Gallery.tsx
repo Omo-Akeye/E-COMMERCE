@@ -22,7 +22,7 @@ const img:Image[] = [
 ];
 
 export default function Gallery() {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {

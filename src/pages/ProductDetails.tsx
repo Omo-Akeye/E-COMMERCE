@@ -1,9 +1,9 @@
 import { useNavigate, useParams,Link } from "react-router-dom";
 import products from "../data/data";
-import AlsoLike from "../components/AlsoLike";
-import Options from "../components/Options";
+import Options from "./ui/Options";
 import { useDispatch } from "react-redux";
 import { handleAddCart } from "./cart/cartUtils";
+import AlsoLike from "../components/AlsoLike";
 
 
 export default function ProductDetails() {
@@ -23,6 +23,7 @@ export default function ProductDetails() {
         <span className="flex items-center justify-center gap-5 text-sm font-medium">
         <Link to={'/'}>
        <h3>Home</h3>
+       
        </Link> 
         <i className="fa-solid fa-angle-right"></i> <h3>Category</h3> <i className="fa-solid fa-angle-right"></i> <h3 className="capitalize">{product.category}</h3>
         </span>

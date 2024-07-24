@@ -1,10 +1,10 @@
-import  { useRef } from 'react';
+import  {  useRef } from 'react';
 import suit1 from '../assets/I2X8VT5P-large.webp';
 import suit2 from '../assets/men-s-formal-suit-photography_1409-5589.jpg';
 import Button from './Button';
 
 export default function Luxury() {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {

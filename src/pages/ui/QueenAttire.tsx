@@ -1,5 +1,5 @@
-import Button from "./Button";
-import women from '../assets/woman-fashion-clothes-pastel-colors_741910-51351.jpg'
+import Button from "../../components/Button";
+import women from '/src/assets/woman-fashion-clothes-pastel-colors_741910-51351.jpg'
 
 
 export default function QueenAttire() {
